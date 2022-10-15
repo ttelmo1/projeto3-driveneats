@@ -117,10 +117,35 @@
         </div>
     </main>
     <footer>
-        <div class="confirm-button" id="confirm-button">
+        <div class="confirm-button" id="confirm-button" onclick="closeOrder()">
             <p>Selecione os 3 itens para fechar o pedido</p>
         </div>
     </footer>
+    <div class="confirm-page" id="confirm-page">
+        <div class="confirm-box">
+            <p class="heading">Confirme seu pedido</p>
+            <div class="main-order">
+                <p></p>
+                <p></p>
+            </div>
+            <div class="drink-order">
+                <p></p>
+                <p></p>
+            </div>
+            <div class="dessert-order">
+                <p></p>
+                <p></p>
+            </div>
+            <div class="total">
+                <p>TOTAL</p>
+                <p></p>
+            </div>
+            <div class="send-button" onclick="sendOrder()">
+                <p>Tudo certo, pode pedir!</p>
+            </div>
+            <p onclick="cancel()">Cancelar</p>
+        </div>
+    </div>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 </body>
 </html>
