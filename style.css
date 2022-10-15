@@ -10,8 +10,11 @@ header{
     padding-top: 8px;
     width: 100%;
     color: #FFFFFF;
-    position: sticky;
+    position: fixed;
     height: 92px;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
 header h1{
@@ -20,6 +23,10 @@ header h1{
 
 h1{
     font-family: "Righteous", cursive;
+}
+
+main{
+    padding-top: 92px;
 }
 
 main h1{

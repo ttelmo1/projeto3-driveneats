@@ -68,6 +68,9 @@ function confirmOrder(){
 }
 
 function closeOrder(){
+    if(mainId == 0 || drinkId == 0 || dessertId == 0){
+        return
+    }
     client = prompt("Digite seu nome")
     address = prompt("Digite seu endereço")
 
