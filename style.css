@@ -59,6 +59,7 @@ body{
     width: 172px;
     margin-right: 16px;
     padding: 8px;
+    position: relative;
 }
 
 p:nth-child(2){

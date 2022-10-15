@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
     <title>DrivenEats</title>
 </head>
 <body>
@@ -15,103 +16,103 @@
     </header>
     <main>
         <h1>Primeiro, seu prato</h1>
-        <div class="main-course">
-            <div class="product">
-                <img src="./img/main-courses/frango_yin_yang 1.png" alt="">
-                <p>Frango Yin Yang</p>
-                <p>Um pouco de batata, um pouco de salada</p>
-                <p>R$ 14,90</p>
-                <ion-icon name="checkmark-circle"></ion-icon>
+        <div class="main-course" onclick="selectMain(event)">
+            <div class="product" id="1">
+                <img src="./img/main-courses/frango_yin_yang 1.png"  id="1" alt="">
+                <p id="1">Frango Yin Yang</p>
+                <p id="1">Um pouco de batata, um pouco de salada</p>
+                <p id="1">R$ 14,90</p>
+                <ion-icon class="1" name="checkmark-circle"></ion-icon>
             </div>
-            <div class="product">
-                <img src="./img/main-courses/trio-burguer.jpg" alt="">
-                <p>Trio Burguer</p>
-                <p>3 Sanduíches pelo valor de 2</p>
-                <p>R$ 32,90</p>
-                <ion-icon name="checkmark-circle"></ion-icon>
+            <div class="product" id="2">
+                <img src="./img/main-courses/trio-burguer.jpg"  id="2" alt="">
+                <p id="2" >Trio Burguer</p>
+                <p id="2" >3 Sanduíches pelo valor de 2</p>
+                <p id="2" >R$ 32,90</p>
+                <ion-icon class="2"name="checkmark-circle"></ion-icon>
             </div>
-            <div class="product">
-                <img src="./img/main-courses/bife.jpg" alt="">
-                <p>Bife com fritas</p>
-                <p>Acompanha arroz,feijão e salada</p>
-                <p>R$ 26,90</p>
-                <ion-icon name="checkmark-circle"></ion-icon>
+            <div class="product" id="3">
+                <img src="./img/main-courses/bife.jpg" id="3" alt="">
+                <p id="3">Bife com fritas</p>
+                <p id="3">Acompanha arroz,feijão e salada</p>
+                <p id="3">R$ 26,90</p>
+                <ion-icon class="3" name="checkmark-circle"></ion-icon>
             </div>
-            <div class="product">
-                <img src="./img/main-courses/frango-frito.jpg" alt="">
-                <p>Frango Frito</p>
-                <p>Muito crocante, acompanha molhos</p>
-                <p>R$ 29,90</p>
-                <ion-icon name="checkmark-circle"></ion-icon>
+            <div class="product" id="4">
+                <img src="./img/main-courses/frango-frito.jpg" id="4" alt="">
+                <p id="4">Frango Frito</p>
+                <p id="4">Muito crocante, acompanha molhos</p>
+                <p id="4">R$ 29,90</p>
+                <ion-icon class="4" name="checkmark-circle"></ion-icon>
             </div>
-            <div class="product">
-                <img src="./img/main-courses/fritas.jpg" alt="">
-                <p>Batata Frita</p>
-                <p>Acompanha cheddar e bacon</p>
-                <p>R$ 35,90</p>
-                <ion-icon name="checkmark-circle"></ion-icon>
+            <div class="product" id="5">
+                <img src="./img/main-courses/fritas.jpg" id="5" alt="">
+                <p id="5">Batata Frita</p>
+                <p id="5">Acompanha cheddar e bacon</p>
+                <p id="5">R$ 35,90</p>
+                <ion-icon class="5" name="checkmark-circle"></ion-icon>
             </div>
         </div>
         <h1>Agora, sua bebida</h1>
-        <div class="drinks">
-            <div class="product">
-                <img src="./img/drinks/coquinha_gelada 1.png" alt="">
-                <p>Coquinha gelada</p>
-                <p>Lata 350 mL</p>
-                <p>R$ 4,90</p>
-                <ion-icon name="checkmark-circle"></ion-icon>
+        <div class="drinks" onclick="selectDrink(event)">
+            <div class="product" id="6">
+                <img src="./img/drinks/coquinha_gelada 1.png" id="6" alt="">
+                <p id="6">Coquinha gelada</p>
+                <p id="6">Lata 350 mL</p>
+                <p id="6">R$ 4,90</p>
+                <ion-icon class="6 "name="checkmark-circle"></ion-icon>
             </div>
-            <div class="product">
-                <img src="./img/drinks/guarana.jpg" alt="">
-                <p>Guaraná gelado</p>
-                <p>Lata 350 mL</p>
-                <p>R$ 4,90</p>
-                <ion-icon name="checkmark-circle"></ion-icon>
+            <div class="product" id="7">
+                <img src="./img/drinks/guarana.jpg"  id="7" alt="">
+                <p id="7">Guaraná gelado</p>
+                <p id="7">Lata 350 mL</p>
+                <p id="7">R$ 4,90</p>
+                <ion-icon class="7" name="checkmark-circle"></ion-icon>
             </div>
-            <div class="product">
-                <img src="./img/drinks/suco-laranja.jpg" alt="">
-                <p>Suco de Laranja</p>
-                <p>Garrafa 500 mL</p>
-                <p>R$ 8,90</p>
-                <ion-icon name="checkmark-circle"></ion-icon>
+            <div class="product" id="8">
+                <img src="./img/drinks/suco-laranja.jpg"  id="8" alt="">
+                <p id="8">Suco de Laranja</p>
+                <p id="8">Garrafa 500 mL</p>
+                <p id="8">R$ 8,90</p>
+                <ion-icon class="8" name="checkmark-circle"></ion-icon>
             </div>
-            <div class="product">
-                <img src="./img/drinks/suco-uva.jpg" alt="">
-                <p>Suco de uva</p>
-                <p>Garrafa 500 mL</p>
-                <p>R$ 8,90</p>
-                <ion-icon name="checkmark-circle"></ion-icon>
+            <div class="product" id="9">
+                <img src="./img/drinks/suco-uva.jpg" id="9" alt="">
+                <p id="9">Suco de uva</p>
+                <p id="9">Garrafa 500 mL</p>
+                <p id="9">R$ 8,90</p>
+                <ion-icon class="9" name="checkmark-circle"></ion-icon>
             </div>
         </div>
         <h1>Por fim, sua sobremesa</h1>
-        <div class="desserts">
-            <div class="product">
-                <img src="./img/desserts/pudim 1.png" alt="">
-                <p>Pudim</p>
-                <p>Apenas pudim</p>
-                <p>R$ 7,90</p>
-                <ion-icon name="checkmark-circle"></ion-icon>
+        <div class="desserts" onclick="selectDessert(event)">
+            <div class="product" id="10">
+                <img src="./img/desserts/pudim 1.png" id="10" alt="">
+                <p id="10">Pudim</p>
+                <p id="10">Apenas pudim</p>
+                <p id="10">R$ 7,90</p>
+                <ion-icon class="10" name="checkmark-circle"></ion-icon>
             </div>
-            <div class="product">
-                <img src="./img/desserts/banoffe.jpg" alt="">
-                <p>Banoffe</p>
-                <p>Porção individual</p>
-                <p>R$ 7,90</p>
-                <ion-icon name="checkmark-circle"></ion-icon>
+            <div class="product" id="11">
+                <img src="./img/desserts/banoffe.jpg" id="11" alt="">
+                <p id="11">Banoffe</p>
+                <p id="11">Porção individual</p>
+                <p id="11">R$ 7,90</p>
+                <ion-icon class="11" name="checkmark-circle"></ion-icon>
             </div>
-            <div class="product">
-                <img src="./img/desserts/torta-de-limão.jpg" alt="">
-                <p>Torta de Limão</p>
-                <p>Porção individual</p>
-                <p>R$ 7,90</p>
-                <ion-icon name="checkmark-circle"></ion-icon>
+            <div class="product" id="12">
+                <img src="./img/desserts/torta-de-limão.jpg" id="12" alt="">
+                <p id="12">Torta de Limão</p>
+                <p id="12">Porção individual</p>
+                <p id="12">R$ 7,90</p>
+                <ion-icon class="12" name="checkmark-circle"></ion-icon>
             </div>
-            <div class="product">
-                <img src="./img/desserts/bolo.jpg" alt="">
-                <p>Bolo de chocolate</p>
-                <p>Fatia de bolo</p>
-                <p>R$ 7,90</p>
-                <ion-icon name="checkmark-circle"></ion-icon>
+            <div class="product" id="13">
+                <img src="./img/desserts/bolo.jpg" id="13" alt="">
+                <p id="13">Bolo de chocolate</p>
+                <p id="13">Fatia de bolo</p>
+                <p id="13">R$ 7,90</p>
+                <ion-icon class="13" name="checkmark-circle"></ion-icon>
             </div>
         </div>
     </main>
