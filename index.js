@@ -64,6 +64,9 @@ function confirmOrder(){
         document.getElementsByClassName("confirm-button")[0].style.backgroundColor="#32B72F"
         document.getElementsByClassName("confirm-button")[0].innerText="Fechar pedido"
         document.getElementsByClassName("confirm-button")[0].style.fontFamily="Roboto"
+        document.getElementsByClassName("confirm-button")[0].style.color="#FFFFFF"
+        document.getElementsByClassName("confirm-button")[0].style.fontWeight="700"
+        document.getElementsByClassName("confirm-button")[0].style.size="20px"
     }
 }
 
@@ -101,8 +104,7 @@ function closeOrder(){
     info[4].innerText=order.drink.value
     dessert = info[5].innerText=order.dessert.product
     info[6].innerText=order.dessert.value
-    total = info[8].innerText=`R$ ${sum.toFixed(2)}`
-    console.log(info)
+    total = info[8].innerText=`R$ ${sum.toFixed(2).replace(".", ",")}`
 }
 
 function cancel(){
@@ -113,9 +115,9 @@ function cancel(){
 function sendOrder(){
     let uri = "https://wa.me/5516997871357"
     let orderZap = `Olá, gostaria de fazer o pedido:
-    ${mainDishes}
-    ${drink}
-    ${dessert}
+    - ${mainDishes}
+    - ${drink}
+    - ${dessert}
     Total: ${total}\n
     Nome: ${client}
     Endereço: ${address}`
